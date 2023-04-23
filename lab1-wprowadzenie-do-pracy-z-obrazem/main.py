@@ -14,6 +14,8 @@ def imgToUInt8(img):
 
 
 def getGrayScale1(img): 
+    if (len(img.shape) < 3):
+        return img;
     return 0.299 * img[:,:,0] + 0.587 * img[:,:,1] + 0.114 * img[:,:,2]
 
 def getGrayScale2(img): 
