@@ -1,4 +1,2 @@
 # General
-*
-!*.py
-!.gitignore
+**/.DS_Store
